@@ -89,8 +89,8 @@ Symbols matching the text at point are put first in the completion list."
 (defun turn-on-paredit ()
   (paredit-mode t))
 
-(defun turn-off-tool-bar ()
-  (tool-bar-mode -1))
+;;(defun turn-off-tool-bar ()
+  ;;(tool-bar-mode -1))
 
 (defun add-watchwords ()
   (font-lock-add-keywords
