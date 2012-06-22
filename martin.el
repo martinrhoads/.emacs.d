@@ -25,4 +25,3 @@
 (global-set-key (kbd "M-n") 'next-ten-lines)
 (global-set-key (kbd "M-p") 'previous-ten-lines)
 
-
