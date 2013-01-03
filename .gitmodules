@@ -1,0 +1,3 @@
+[submodule "vendor/emms"]
+	path = vendor/emms
+	url = git://git.sv.gnu.org/emms.git
