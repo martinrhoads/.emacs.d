@@ -4,7 +4,7 @@
 ;;
 ;; Author: Phil Hagelberg <technomancy@gmail.com>
 ;; URL: http://www.emacswiki.org/cgi-bin/wiki/StarterKit
-;; Version: 2.0.2
+;; Version: 2.0.3
 ;; Keywords: convenience
 
 ;; This file is not part of GNU Emacs.
@@ -52,7 +52,6 @@
      (set-face-attribute 'eshell-prompt nil :foreground "turquoise1")
      (add-hook 'eshell-mode-hook ;; for some reason this needs to be a hook
                '(lambda () (define-key eshell-mode-map "\C-a" 'eshell-bol)))
-     (add-to-list 'eshell-output-filter-functions 'eshell-handle-ansi-color)
      (setq eshell-cmpl-cycle-completions nil)
 
      ;; TODO: submit these via M-x report-emacs-bug
