@@ -6,11 +6,10 @@
 (require 'ido)
 (ido-mode t)
 
-;; Rinari
-(add-to-list 'load-path "~/.emacs.d/vendor/rinari")
-(require 'rinari)
+ (setq rinari-tags-file-name "TAGS")
 
 
+;; emms
 (add-to-list 'load-path "~/.emacs.d/vendor/emms/lisp")
 (require 'emms-setup)
 (require 'emms-info-libtag)
