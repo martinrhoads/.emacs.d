@@ -38,5 +38,11 @@
 
 
 (require 'whitespace)
-(setq whitespace-stype '(face empty tabs lines-tail trailing))
-(global-whitespace-mode t)
+;;(setq whitespace-stype '(face empty tabs lines-tail ))
+;;(global-whitespace-mode t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
