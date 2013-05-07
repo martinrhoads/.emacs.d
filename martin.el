@@ -46,3 +46,7 @@
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+
+
+(setq ruby-deep-indent-paren nil)
+(setq ruby-indent-level 2)
