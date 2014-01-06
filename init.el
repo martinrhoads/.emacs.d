@@ -9,10 +9,9 @@
   (package-refresh-contents))
 
   ;; Add in your own as you wish:
-  (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings starter-kit-ruby ruby-test-mode rinari rspec-mode ssh tramp markdown-mode )
+  (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings starter-kit-ruby ruby-test-mode rinari rspec-mode ssh tramp markdown-mode yaml-mode )
     "A list of packages to ensure are installed at launch.")
 
     (dolist (p my-packages)
       (when (not (package-installed-p p))
           (package-install p)))
-
