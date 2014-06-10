@@ -1,6 +1,9 @@
 
 ;; shit in my vendor dir
 
+(require 'tramp)
+(setq tramp-default-method "scp")
+
 ;; Interactively Do Things (highly recommended, but not
 ;; strictly required)
 (require 'ido)
