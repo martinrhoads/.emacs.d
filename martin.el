@@ -40,10 +40,6 @@
 (global-set-key (kbd "M-p") 'previous-ten-lines)
 
 
-(require 'whitespace)
-;;(setq whitespace-stype '(face empty tabs lines-tail ))
-;;(global-whitespace-mode t)
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)

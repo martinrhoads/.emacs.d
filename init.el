@@ -19,3 +19,9 @@
 
 (setq line-number-mode t)
 (setq column-number-mode t)
+
+
+(require 'whitespace)
+;;(setq whitespace-stype '(face empty tabs lines-tail ))
+;;(global-whitespace-mode t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
