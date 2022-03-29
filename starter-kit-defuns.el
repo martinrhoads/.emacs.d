@@ -27,7 +27,7 @@ Symbols matching the text at point are put first in the completion list."
   (imenu--make-index-alist)
   (let ((name-and-pos '())
         (symbol-names '()))
-    (flet ((addsymbols (symbol-list)
+    (cl-let ((addsymbols (symbol-list)
                        (when (listp symbol-list)
                          (dolist (symbol symbol-list)
                            (let ((name nil) (position nil))
@@ -92,8 +92,8 @@ Symbols matching the text at point are put first in the completion list."
 ;;(defun turn-off-tool-bar ()
   ;;(tool-bar-mode -1))
 
-(defun turn-on-idle-highlight ()
-  (idle-highlight-mode t))
+;; (defun turn-on-idle-highlight ()
+;;   (idle-highlight-mode t))
 
 (defun add-watchwords ()
   (font-lock-add-keywords
@@ -106,7 +106,7 @@ Symbols matching the text at point are put first in the completion list."
 (add-hook 'coding-hook 'turn-on-save-place-mode)
 (add-hook 'coding-hook 'pretty-lambdas)
 (add-hook 'coding-hook 'add-watchwords)
-(add-hook 'coding-hook 'turn-on-idle-highlight)
+;; (add-hook 'coding-hook 'turn-on-idle-highlight)
   
 (defun run-coding-hook ()
   "Enable things that are convenient across all coding buffers."

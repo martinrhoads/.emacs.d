@@ -82,7 +82,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 (eval-when-compile
   (if (string-match "XEmacs" emacs-version)
       (byte-compiler-options

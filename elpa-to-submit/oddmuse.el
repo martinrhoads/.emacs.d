@@ -121,7 +121,7 @@
 ;;
 
 ;;; Code:
-(require 'cl)
+(require 'cl-lib)
 (eval-when-compile  (require 'sgml-mode) (require 'skeleton))
 (require 'url)
 (require 'url-http)

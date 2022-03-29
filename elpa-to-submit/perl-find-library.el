@@ -36,7 +36,7 @@
 ;;  the minibuffer and finds the file corresponding to it on disk.
 
 (require 'cperl-mode)
-(require 'cl)
+(require 'cl-lib)
 
 ;; Convenience function that really ought be part of emacs to start
 ;; with, damnit.

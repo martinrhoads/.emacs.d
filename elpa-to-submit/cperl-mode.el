@@ -2686,7 +2686,7 @@ versions of Emacs."
       ;; expansion manually.  Any other suggestions?
       (if cperl-can-font-lock
 	  (require 'font-lock))
-      (require 'cl)))
+      (require 'cl-lib)))
 
 (defvar cperl-mode-abbrev-table nil
   "Abbrev table in use in CPerl mode buffers.")
@@ -7107,7 +7107,7 @@ indentation and initial hashes.  Behaves usually outside of comment."
 	 lst)))
 
 (defun cperl-imenu--create-perl-index (&optional regexp)
-  (require 'cl)
+  (require 'cl-lib)
   (require 'imenu)			; May be called from TAGS creator
   (let ((index-alist '()) (index-pack-alist '()) (index-pod-alist '())
 	(index-unsorted-alist '()) (i-s-f (default-value 'imenu-sort-function))
@@ -8538,7 +8538,7 @@ by CPerl."
 	(set 'parse-sexp-lookup-properties t))))
 
 (defun cperl-xsub-scan ()
-  (require 'cl)
+  (require 'cl-lib)
   (require 'imenu)
   (let ((index-alist '())
 	(prev-pos 0) index index1 name package prefix)
