@@ -1,3 +1,4 @@
+recentf
 loaddefs.el*
 backups/*
 auto-save-list
@@ -21,4 +22,3 @@ session*
 tramp
 \#*
 history
-recentf
