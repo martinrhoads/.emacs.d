@@ -106,9 +106,9 @@ Symbols matching the text at point are put first in the completion list."
 (add-hook 'coding-hook 'turn-on-save-place-mode)
 (add-hook 'coding-hook 'pretty-lambdas)
 (add-hook 'coding-hook 'add-watchwords)
-(add-hook 'write-file-hooks  'cleanup-buffer)
+(add-hook 'write-file-hooks  'delete-trailing-whitespace)
 ;; (add-hook 'coding-hook 'turn-on-idle-highlight)
-  
+
 (defun run-coding-hook ()
   "Enable things that are convenient across all coding buffers."
   (run-hooks 'coding-hook))
